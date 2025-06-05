@@ -6,6 +6,7 @@ const nextConfig: NextConfig = {
   trailingSlash: true,         // ensures correct linking of CSS/JS
 
 
+
 };
 
 export default nextConfig;
