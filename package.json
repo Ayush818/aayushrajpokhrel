@@ -5,8 +5,9 @@
   "scripts": {
  "build": "next build",
   "export": "next dev", 
-  "predeploy": "rm -rf out && next build",
+  "predeploy": "rm -rf .next out && npm run build && npm run export && cp out/index.html ./index.html",
   "deploy": "gh-pages -d out"
+
   },
   "dependencies": {
     "@google/generative-ai": "^0.24.1",
